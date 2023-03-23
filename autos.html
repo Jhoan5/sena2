@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Theme</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="./images/JAVASCRIPT.png" type="image/x-icon">
+</head>
+
+<!-- Pegando funcion de java para el onmoueseover y onmouseout -->
+
+<script type="text/javascript">
+  function MM_showHideLayers() { //v9.0
+      var i,p,v,obj,args=MM_showHideLayers.arguments;
+      for (i=0; i<(args.length-2); i+=3) 
+      with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+      if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+      obj.visibility=v; }
+  }
+  </script>
+
+<!-- Usando la plantilla planteada en la cartilla, dando retoques para el proyecto -->
+<body>
+  <header>
+
+    <div class="primary_header">
+      <h1 class="title">RENTA Y VENTA DE AUTOS CLASICOS</h1>
+    </div>
+
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="autos.html">AUTOS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="contacto.html"> CONTACTO</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section>
+    <h2 class="noDisplay">Descripcion del proyecto</h2>
+    <article class="left_article">
+      <h3></h3>
+      <p style="margin: 15px;">En esta etapa del proceso de aprendizaje se propone crear una página aplicando estilos 
+        de plantillas predeterminadas en Adobe Dreamweaver según el siguiente requerimiento: 
+        Dando continuidad a la Actividad de Aprendizaje 3, como prueba adicional en el proceso 
+        de selección desarrollado en la empresa de renta de automóviles se le solicita ampliar la 
+        información de la página que realizó anteriormente. Para ello se propone la creación de 
+        un nuevo sitio implementando una de las plantillas que ofrece Adobe Dreamweaver. 
+        </p>
+    </article>
+    <aside class="right_article">
+
+        <img id="auto1" src="./images/auto1.jpg" alt="" width="400" height="200" class="placeholder"/> 
+        <img id="auto2" src="./images/auto2.jpg" alt="" width="400" height="200" class="placeholder"/> 
+        <img id="auto3" src="./images/auto3.jpg" alt="" width="400" height="200" class="placeholder"/> 
+      
+      </aside>
+  </section>
+
+  <div class="row">
+    <div class="columns">
+
+      <p class="thumbnail_align"> <img src="./images/auto2.jpg" alt="" class="thumbnail" onMouseOver="MM_showHideLayers('auto2','','show')" onMouseOut="MM_showHideLayers('auto2','','hide')"/> </p>
+
+      <h4>Auto promocional 1</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+
+<!-- aqui se ponen las imagenes en onmouseover y onmouseout -->
+
+    <div class="columns">
+
+      <p class="thumbnail_align"> <img src="./images/auto3.jpg" alt="" class="thumbnail" onMouseOver="MM_showHideLayers('auto3','','show')" onMouseOut="MM_showHideLayers('auto3','','hide')"/> </p>
+      
+      <h4>Auto promocional 2</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+  
+    <div class="columns">
+      
+      <p class="thumbnail_align"> <img src="./images/auto1.jpg" alt="" class="thumbnail" onMouseOver="MM_showHideLayers('auto1','','show')" onMouseOut="MM_showHideLayers('auto1','','hide')"/> </p>
+      
+      <h4>Auto promocional 3</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+  
+  </div>
+  
+  <div class="row blockDisplay">
+    <div class="column_half left_half">
+      <h2 class="column_title">LEFT COLUMN</h2>
+    </div>
+    <div class="column_half right_half">
+      <h2 class="column_title">RIGHT COLUMN</h2>
+    </div>
+  </div>
+  
+  <div class="social">
+    <p class="social_icon"><a href="https://www.facebook.com"><img src="./images/face.png" width="100" alt="" class="thumbnail"/></a></p>
+    <p class="social_icon"><a href="https://www.twitter.com"><img src="./images/twitter.png" width="100" alt="" class="thumbnail"/></a></p>
+    <p class="social_icon"><a href="https://www.youtube.com"><img src="./images/youtube.png" width="100" alt="" class="thumbnail"/></a></p>
+    <p class="social_icon"><a href="https://www.whatsapp.com"><img src="./images/whatsapp.png" width="100" alt="" class="thumbnail"/></a></p>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2023 - <strong>Proyecto_sena @Jhoan</strong></div>
+  </footer>
+</div>
+</body>
+</html>
